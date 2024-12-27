@@ -33,51 +33,57 @@
             text-align: start;
             padding: 20px;
         }
+        .header-img {
+            text-align: center;
+            padding-top: 24px;
+        }
+        .header-img img {
+            max-width: 172px;
+        }
         .content {
             padding: 20px;
-            padding-top: 40px;
-            padding-bottom: 50px;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
         .content .title {
-            color: #40424A;
             font-size: 1.25rem;
             line-height: 1.4;
             margin-top: 0;
-            margin-bottom: 32px;
+            margin-bottom: 36px;
+        }
+        .content .subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
         .content .greeting {
-            color: #40424A;
             font-weight: 700;
             margin-bottom: 16px;
         }
-        .code-box-wraper {
-            margin: 40px 0;
+        .content .login-details {
+            margin: 36px 0;
         }
-        .code-box {
-            font-size: 1.5rem;
-            line-height: 1.3;
-            font-weight: 700;
-            color: #40424A;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #CBD5E1;
-            border-radius: 6px 0 0 6px;
-            box-shadow: 0 1px 2px 0 #34405414;
-            width: 100%;
-            display: inline-block;
-        }
-        .code-box-btn {
-            color: #334155;
-            font-size: 1rem;
-            line-height: 1.7;
+        .content .login-details span {
             font-weight: 500;
-            border: 1px solid #CBD5E1;
-            border-left: 0;
-            border-radius:0 6px 6px 0;
-            padding: 12px;
-            box-shadow: 0 1px 2px 0 #34405414;
-            width: 100%;
-            height: 100%;
+        }
+        .content .login-details .email {
+            margin-bottom: 14px;
+        }
+        .content .next-steps {
+            margin-bottom: 26px;
+        }
+        .content .next-steps ol{
+            padding-left: 16px;
+        }
+        .content .next-steps ol li {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .content .next-steps ol li a {
+            color: #3B82F6;
+            text-decoration: none;
         }
         .footer {
             padding: 0 20px 20px 20px;
@@ -106,29 +112,31 @@
             </td>
         </tr>
         <tr>
-            <td class="content">
-                <h1 class="title">Verify Your Email</h1>
-                <p class="greeting">Hi Muhammad,</p>
-                <p>You're receiving this email to confirm your email address for your account. To finish verifying your email address, please copy the code below and paste it into the designated field:</p>
-                <div class="code-box-wraper">
-                    <table style="width: 100%; border-spacing: 0; border-collapse: collapse; margin-bottom: 16px;">
-                        <tr>
-                          <td style="width: 80%;">
-                            <span class="code-box">63theke98i</span>
-                          </td>
-                          <td style="width: 20%;">
-                            <span class="code-box-btn" style="max-width: 110px; display: inline-flex; align-items: center;">
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.4998 6V3C7.4998 2.44772 7.94752 2 8.4998 2H20.4998C21.0521 2 21.4998 2.44772 21.4998 3V17C21.4998 17.5523 21.0521 18 20.4998 18H17.4998V20.9991C17.4998 21.5519 17.0499 22 16.493 22H4.50666C3.95059 22 3.5 21.5554 3.5 20.9991L3.5026 7.00087C3.5027 6.44811 3.95264 6 4.50942 6H7.4998ZM5.50242 8L5.50019 20H15.4998V8H5.50242ZM9.4998 6H17.4998V16H19.4998V4H9.4998V6Z" fill="#334155"/>
-                                </svg>
-                                <span style="margin-left: 5px; display: inline-block; ">Copy</span>
-                            </span>
-                          </td>
-                        </tr>
-                      </table>
-                      <p>This code will expire in 5 minutes.</p>
+            <td>
+                <div class="header-img">
+                    <img src="./Success1.png" alt="success">
                 </div>
-                <p style="margin-bottom: 24px ;">If you didn't initiate this request, you can safely disregard this email.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <h1 class="title">Your store has been created successfully!</h1>
+                <p class="greeting">Hi Muhammad,</p>
+                <p>Congratulations! Your store has been successfully set up on Wmelons. Below are your login details to access your store dashboard</p>
+                <div class="login-details">
+                    <h3 class="subtitle">Login Details</h3>
+                    <div class="email"><span>Email:</span> user@shop.wmelons.com</div>
+                    <div class="pass"><span>Password:</span> df45s!6646ggfgf12</div>
+                </div>
+                <div class="next-steps">
+                    <h3 class="subtitle">Login Details</h3>
+                    <ol>
+                        <li>Log in to your store dashboard <a href="javascript:void(0)">here.</a></li>
+                        <li>Change your temporary password to ensure your account’s security.</li>
+                        <li>Start customizing your store and uploading products!</li>
+                    </ol>
+                </div>
+                <p style="margin-bottom: 24px ;">If you have any questions or need assistance, feel free to contact our support team.</p>
                 <p>Best Regards,<br><span style="margin-top: 12px ;display: inline-block;">Wmelons Team</span></p>
             </td>
         </tr>
