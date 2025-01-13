@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            font-size: .875rem;
+            line-height: 1.4;
+            color: #040611;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f4f4f4;
+        }
+        .main-table {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-spacing: 0;
+            border-collapse: collapse;
+            box-shadow: 0 1px 2px 0 #34405414;
+        }
+        .w-full{
+            width: 100%;
+        }
+        .devider {
+            width: 100%;
+            height: 1px;
+            background-color: #CBD5E1;
+        }
+        .top-header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .header-text {
+            background: #AAF0C4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header-text .header {
+            color: #3E4048;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+        .header-text .greeting {
+            color: #3E4048;
+            font-weight: 600;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+            margin: 24px 0 16px 0;
+        }
+        .header-text .recived_massege {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+            color: #3E4048;
+        }
+        .header-text .recived_massege .order_number {
+            font-weight: 600;
+        }
+        .header-text .teack_order_btn a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+            font-weight: 600;
+            display: inline-block;
+            background: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 100px;
+            box-shadow: inset 0 2px 4px 0 #FFFFFF29;
+            margin-top: 24px;
+        }
+        .product {
+            padding: 0 20px;
+            padding-top: 24px;
+            padding-bottom: 4px;
+        }
+        .product td {
+            vertical-align: top;
+        }
+        .product .product_details {
+            max-width: 350px;
+            display: flex;
+            gap: 20px;
+        }
+        .product_text h3{
+            font-size: 1.125rem;
+            line-height: 1.4;
+            color: #1D2635;
+            font-weight: 600;
+        }
+        .product_text .author{
+            font-size: 0.875rem;
+            line-height: 1.4;
+            color: #475569;
+            margin: 8px 0 20px 0;
+        }
+        .product_text .procut_price{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            color: #1D2635;
+            font-weight: 600;
+        }
+        .product .product_quantity{
+            text-align: right;
+        }
+        .product .product_quantity .quantity{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            color: #1D2635;
+        }
+        .product .product_quantity .price{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            color: #1D2635;
+            font-weight: 600;
+        }
+        
+        .calculation, .address {
+            padding: 12px 20px;
+        }
+        .calculation td, .address td {
+            padding: 8px 0;
+        }
+        .calculation .left-part, .address .left-part {
+            color:#475569;
+            font-size: 0.875rem;
+            line-height: 1.4;
+        }
+        .calculation .right-part, .address .right-part {
+            color:#0B1334;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.4;
+            text-align: right;
+        }
+        .calculation .total {
+            color:#0B1334;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .calculation .ammount {
+            color:#0B1334;
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+        .address {
+            padding-top: 0;
+            padding-bottom: 24px;
+        }
+        .footer {
+            padding: 0 20px 24px 20px;
+            text-align: center;
+            color: #475569;
+        }
+        .footer .devider {
+            height: 1px;
+            width: 100%;
+            background-color: #E2E8F0;
+            margin: 0 auto;
+            margin-bottom: 32px;
+        }
+        .footer .social_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 32px;
+        }
+        .footer .social_icon a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+            border-radius: 50%;
+            background: #E2E8F0;
+        }
+        .footer a {
+            color: #334155;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <tr>
+            <td class="top-header">
+                <img src="./luminous.png" alt="luminous">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="header-text">
+                    <h2 class="header">You have received a new order!</h2>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <table class="w-full">
+                    <tr>
+                        <td>
+                            <div class="product_details">
+                                <div class="product_image">
+                                    <img src="./Book.png" alt="book">
+                                </div>
+                                <div class="product_text">
+                                    <h3>Write My Name Across The Sky</h3>
+                                    <p class="author">Barbara O’Neal</p>
+                                    <p class="procut_price">$13.34</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="product_quantity">
+                            <span class="quantity">x2</span>
+                            <span class="price">$20</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="address">
+                <table class="w-full">
+                    <tr>
+                        <td colspan="2" class="left-part">
+                            <div class="devider"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-part">
+                            Name
+                        </td>
+                        <td class="right-part">
+                            Muhammad Shahin
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-part">
+                            Shipping Address
+                        </td>
+                        <td class="right-part">
+                            2112 Jahar Street, Haji Nayeem Rd. Dubai 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-part">
+                            City
+                        </td>
+                        <td class="right-part">
+                            Dubai
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-part">
+                            Zip Code
+                        </td>
+                        <td class="right-part">
+                            Zip Code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-part">
+                            Country
+                        </td>
+                        <td class="right-part">
+                            United Arab Emirates
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <div class="devider"></div>
+                <p class="social_icon">
+                    <a href="#/"><img src="./twitter.png" alt="twitter"></a>
+                    <a href="#/"><img src="./facebook1.png" alt="facebook"></a>
+                    <a href="#/"><img src="./instagram.png" alt="instagram"></a>
+                </p>
+                <p style="margin-bottom: 32px;">&copy; 2024 Luminous. All rights reserved.</p>
+                <p style="margin-bottom: 32px;">You’re receiving this email because of your recent activity with Luminous. If you’d like to stop receiving emails, you can <a href="#">Unsubscribe</a>
+                </p>
+                <p >
+                    <span>2112 Mega Building, Haji Nayeem Rd., Dubai, UAE</span>
+                    
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
